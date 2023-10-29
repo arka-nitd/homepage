@@ -1,6 +1,6 @@
 title: Arka Roy
 url: http://arka-nitd.github.io
-baseurl: /homepage/
+baseurl: /homepage
 description: 'Personal site of Arka Roy, Software Developer @InMobi'
 keywords:
  - Arka Roy
@@ -21,11 +21,11 @@ sections:
  - projects
  - blog
 stylesheets:
- - /assets/themes/default/css/screen.css?52480=52480
- - /assets/themes/default/css/print.css
+ - /homepage/assets/themes/default/css/screen.css?52480=52480
+ - /homepage/assets/themes/default/css/print.css
 scripts:
  - http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js    
- - /assets/themes/default/js/site.js
+ - /homepage/assets/themes/default/js/site.js
 colors:
     highlights:
         blue: '#009ff7'

@@ -23,9 +23,9 @@
     <link href="{{ site.author.openid.delegate }}" rel="openid2.local_id" />
     <link href="{{ site.author.openid.server }}" rel="openid.server" />
     <link href="{{ site.author.openid.delegate }}" rel="openid.delegate" />
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/themes/default/images/favicon.ico" />
-    <link rel="icon" type="image/png" href="/assets/themes/default/images/favicon.png" />
-    <link rel="apple-touch-icon" href="/assets/themes/default/images/title.jpg"/>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/homepage/assets/themes/default/images/favicon.ico" />
+    <link rel="icon" type="image/png" href="/homepage/assets/themes/default/images/favicon.png" />
+    <link rel="apple-touch-icon" href="/homepage/assets/themes/default/images/title.jpg"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <meta name="viewport" content="width=800" />    
@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="{{ stylesheet }}" media="screen" />            
     {% endfor %}    
     <!--[if IE]>
-    <script src="/assets/themes/default/js/html5.js"></script>
+    <script src="/homepage/assets/themes/default/js/html5.js"></script>
     <![endif]-->    
     {% for script in site.scripts %}
     <script src="{{ script }}" type="text/javascript"></script>
@@ -55,7 +55,7 @@
         <nav id="main_nav">
             <ul>
                 {% for section in site.sections %}
-                <li><a href="/{{ section }}/" class="{{ section }}">{{ section }}</a></li>
+                <li><a href="/homepage/{{ section }}/" class="{{ section }}">{{ section }}</a></li>
                 {% endfor %}
             </ul>
         </nav>        
