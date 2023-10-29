@@ -5,14 +5,6 @@ Options -Indexes
 ErrorDocument 404 /notfound/
 ErrorDocument 403 /notfound/
 
-# Redirection of www.* to non-www.*
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www.michaelmonteleone.net
-RewriteRule (.*) http://michaelmonteleone.net/ [R=301,L]
-
-Header set Served-By "Robert'); DROP TABLE Students;--"
-Header unset X-Powered-By
-
 # Caching 
 # Header unset ETag
 # FileETag None
