@@ -85,7 +85,8 @@ table {
 
 /* highlight colors */
 .projects { color: {{ site.colors.highlights.blue }} }
-.about { color: {{ site.colors.highlights.green }} }
+.about { color: {{ site.colors.highlights.red }} }
+.research { color: {{ site.colors.highlights.red }} }
 .journal { color: {{ site.colors.highlights.red }} }
 	
 a {
@@ -168,7 +169,7 @@ body {
 	text-indent: -3000em;
     }
     #title h1 {
-		width: 100%;
+		width: 100%;
 		height: 100%;
 		display: block;
         }
@@ -184,17 +185,17 @@ body {
 			}
     
 nav#main_nav {
-    width: 360px;
+    width: 460px;
     top: 0px;
     position: absolute;
-    left: 50%;
+    left: 55%;
     margin-right: 0px;
     z-index: 10;
     }
     nav#main_nav ul {
         display: inline;
         float: right;
-        width: 240px;
+        width: 380px;
 		}
         nav#main_nav ul li {            
             display: inline;
@@ -242,196 +243,187 @@ nav#main_nav {
     padding-bottom: 80px;    
     position: relative;    
     color: {{ site.colors.mono.dark }};    
-    width: 940px;
+    width: 910px;
     overflow: hidden;
     }
-    ul code, 
-    ol code, 
-    p code {
-        font-size: 11pt;
-        }
-    #content h1 {
-        font-family: 'Helvetica Neue', Helvetica, Arial;
-        font-weight: bold;
-		font-size: 52pt;
-		letter-spacing: -1pt;		
-        padding-top: 0px;
-        color: {{ site.colors.mono.dark }};
-		position: relative;
-		left: -3px;		
-		padding-bottom: 10px;
-        }        
-	#content h2 {
-        font-family: 'Helvetica Neue', Helvetica, Arial;
-        font-weight: bold;
-		font-size: 20pt;
-		margin-top: 10px;
-		}
-	#content h3 {
-        font-family: 'Helvetica Neue', Helvetica, Arial;
-        font-weight: bold;
-		font-size: 14pt;
-		
-		text-transform: uppercase;
-		font-size: 12pt;
-		letter-spacing: .1em;
-		}
-	#content h1 a,
-	#content h2 a,
-	#content h3 a,
-	#content h1 a:hover,
-	#content h2 a:hover,
-	#content h3 a:hover{
-    	border-bottom: 0px;
-    	}
-    #content article {
-        width: 940px;
-        overflow: display;
-        }
-    #content article p,
-    #content article blockquote,
-    #content article time,
-    #content article ul,
-    #content article ol,
-    #content article h1,
-    #content article h2,
-    #content article h3,
-    #content article pre {
-        margin-bottom: 18pt;
-        }
-        #content article header h1, 
-        #content article header h2, 
-        #content article header h3 {
-            margin-bottom: 12pt;
-            }       
-    #content article p,
-    #content article blockquote,
-    #content article time,
-    #content article ul,
-    #content article ol 
-        {
-		font-family: times, 'Times New Roman', times-roman, serif;
-        font-size: 14pt;
-		line-height: 1.5em;
-		text-align: justify;
-		}
-		#content article time {
-		    font-style: italic;
-		    text-align: center;
-		    font-size: 1em;
-		    }
-        #content article h1 {
-            width: 640px;
-            }
-        #content article blockquote {
-            padding-left: 40px;
-            padding-right: 40px;
-            }
-    #content article ul {
-        list-style-type:disc;
-        margin-left: 2em;
-        }
-    #content article ol {
-        list-style: decimal;
-        margin-left: 2em;
-        }
-        #content article ul p,
-        #content article ol p {
-            margin-top: 0px;
-            margin-bottom: 0px;
-            }
-        #content article ol ol,
-        #content article ul ul,
-        #content article ul ol,
-        #content article ol ul {
-            margin-top: 0px;
-            margin-bottom: 0px;
-            }
-    div.slidey_title_wrapper {
-        position: absolute;
-        font-weight: bold;
-        font-size: 225pt;
-        overflow: hidden;
-        width: 100%;
-        left: 0px;
-        top: 35px;           
-		color: {{ site.colors.mono.light }};
-		font-family: Helvetica, Arial, sans-serif;
-		letter-spacing: -1pt;
-		text-transform: none;		
-        }
-        div.slidey_title {
-            width: 760px;
-            margin-left: auto;
-            margin-right: auto;
-            overflow: visible;
-            }
-            div.slidey_title span {
-                width: 140em;
-                display: block;
-                position: relative;
-                width: 3000px;
-                overflow: hidden;
-                }        
-     #content div#disqus_thread {
-        margin-top: 80px; 
-        }
-     #content article p a,
-     #content article ul a,
-     #content article ol a {
-        font-weight: normal;
-        }        
-    .projects header a,
-    .about header a,
-    .journal header a {
-        color: {{ site.colors.mono.dark }};
-        -webkit-transition: color 0.17s ease-in-out;
-        -moz-transition: color 0.17s ease-in-out;
-        }
-    .projects a {
-        color: {{ site.colors.highlights.blue }};
-        border-color: {{ site.colors.highlights.blue }};
-        }
-        .projects header a { color: {{ site.colors.mono.dark }}; }
-        .projects header a:hover { color: {{ site.colors.highlights.blue }}; }
-    .about a {
+
+ul code,
+ol code,
+p code {
+    font-size: 11pt;
+}
+
+#content h1 {
+    font-family: 'Helvetica Neue', Helvetica, Arial;
+    font-weight: bold;
+    font-size: 52pt;
+    letter-spacing: -1pt;
+    padding-top: 0px;
+    color: {{ site.colors.mono.dark }};
+    position: relative;
+    left: 0px;
+    padding-bottom: 10px;
+}
+#content h2 {
+    font-family: 'Helvetica Neue', Helvetica, Arial;
+    font-weight: bold;
+    font-size: 20pt;
+    margin-top: 10px;
+}
+#content h3 {
+    font-family: 'Helvetica Neue', Helvetica, Arial;
+    font-weight: bold;
+    font-size: 14pt;
+
+    text-transform: uppercase;
+    font-size: 12pt;
+    letter-spacing: .1em;
+}
+
+#content h1 a,
+#content h2 a,
+#content h3 a,
+#content h1 a:hover,
+#content h2 a:hover,
+#content h3 a:hover{
+    border-bottom: 0px;
+}
+#content article {
+    width: 940px;
+    overflow: display;
+}
+#content article p,
+#content article blockquote,
+#content article time,
+#content article ul,
+#content article ol,
+#content article h1,
+#content article h2,
+#content article h3,
+#content article pre {
+    margin-bottom: 18pt;
+}
+#content article header h1,
+#content article header h2,
+#content article header h3 {
+    margin-bottom: 12pt;
+}
+#content article p,
+#content article blockquote,
+#content article time,
+#content article ul,
+#content article ol {
+    font-family: times, 'Times New Roman', times-roman, serif;
+    font-size: 14pt;
+    line-height: 1.5em;
+    text-align: justify;
+}
+#content article time {
+    font-style: italic;
+    text-align: center;
+    font-size: 1em;
+}
+#content article h1 {
+    width: 640px;
+}
+#content article blockquote {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#content article ul {
+    list-style-type:disc;
+    margin-left: 2em;
+}
+#content article ol {
+    list-style: decimal;
+    margin-left: 2em;
+}
+#content article ul p,
+#content article ol p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#content article ol ol,
+#content article ul ul,
+#content article ul ol,
+#content article ol ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+div.slidey_title_wrapper {
+    position: absolute;
+    font-weight: bold;
+    font-size: 225pt;
+    overflow: hidden;
+    width: 100%;
+    left: 0px;
+    top: 35px;
+    color: {{ site.colors.mono.light }};
+    font-family: Helvetica, Arial, sans-serif;
+    letter-spacing: -1pt;
+    text-transform: none;
+}
+
+div.slidey_title {
+    width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: visible;
+}
+div.slidey_title span {
+    width: 140em;
+    display: block;
+    position: relative;
+    width: 3000px;
+    overflow: hidden;
+}
+#content div#disqus_thread {
+    margin-top: 80px;
+}
+#content article p a,
+#content article ul a,
+#content article ol a {
+    font-weight: normal;
+}
+
+.projects header a,
+.research header a,
+.about header a,
+.journal header a {
+    color: {{ site.colors.mono.dark }};
+    -webkit-transition: color 0.17s ease-in-out;
+    -moz-transition: color 0.17s ease-in-out;
+}
+
+
+.projects a {
+    color: {{ site.colors.highlights.blue }};
+    border-color: {{ site.colors.highlights.blue }};
+}
+.projects header a { color: {{ site.colors.mono.dark }}; }
+.projects header a:hover { color: {{ site.colors.highlights.blue }}; }
+
+.research a {
+     color: {{ site.colors.highlights.red }};
+     border-color: {{ site.colors.highlights.red }};
+}
+.research header a { color: {{ site.colors.mono.dark }}; }
+.research header a:hover { color: {{ site.colors.highlights.red }}; }
+
+.about a {
         color: {{ site.colors.highlights.dark }};
         border-color: {{ site.colors.highlights.dark }};
         }
-        .about header a { color: {{ site.colors.mono.dark }}; }
-        .about header a:hover { color: {{ site.colors.highlights.green }}; }
-    .journal a {
-        color: {{ site.colors.highlights.red }};
-        border-color: {{ site.colors.highlights.red }};
-        }
-        .journal header a { color: {{ site.colors.mono.dark }}; }
-        .journal header a:hover { color: {{ site.colors.highlights.red }}; }    
-     a:visited {
-        color: {{ site.colors.mono.dark }};
-        border-color: {{ site.colors.mono.dark }};
-        }
-#backpages {
-    position: absolute;
-    width: 920px;
-    left: 50%;
-    margin-left: -460px;
-    z-index: 1;
-    }
-    #backpages div {
-        position: absolute;
-        width: 920px;
-        height: 100px;
-        background-repeat: no-repeat;
-        }
-        #backpages div.journal {
-            background-image: url(../images/previewc.png);
-            }
-        #backpages div.about {
-            background-image: url(../images/previewb.png);
-            }
-        #backpages div.projects {
-            background-image: url(../images/previewa.png);
-            }
+.about header a { color: {{ site.colors.mono.dark }}; }
+.about header a:hover { color: {{ site.colors.highlights.green }}; }
+
+.journal a {
+    color: {{ site.colors.highlights.red }};
+    border-color: {{ site.colors.highlights.red }};
+}
+.journal header a { color: {{ site.colors.mono.dark }}; }
+.journal header a:hover { color: {{ site.colors.highlights.red }}; }
 
 #footer-wrapper {
     clear: both;
@@ -603,26 +595,26 @@ body.home #content div.section {
 
 /* projects listing */
 
-.projects article {    
+:is(.projects, .research) article {
     }
-    .projects #content article h3 {
+    :is(.projects, .research) #content article h3 {
         float: left;
         width: 160px;
         margin-top: 1px;
         }
-    .projects #content article ul {
+    :is(.projects, .research) #content article ul {
         text-align: left;
         list-style: none;
         margin-left: 0px;/*1em;*/
         margin-left: 160px;
         padding-bottom: 20px;
         }
-        .projects #content article ul li {
+        :is(.projects, .research) #content article ul li {
             display: block;
             overflow: auto;
             padding-bottom: .75em;
             }
-        .projects #content article ul li a {
+        :is(.projects, .research) #content article ul li a {
             display: block;
             font-family: 'Helvetica Neue', Helvetica, Arial,sans-serif;
             line-height: 1.3em;
@@ -630,10 +622,10 @@ body.home #content div.section {
             color: {{ site.colors.mono.dark }};
             border-bottom: 1px dotted {{ site.colors.mono.dark }};
             }
-            .projects #content article ul li a:hover {
+            :is(.projects, .research) #content article ul li a:hover {
                 border-bottom: 1px solid {{ site.colors.mono.dark }};
                 }
-        .projects #content article ul li span {
+        :is(.projects, .research) #content article ul li span {
             display: block;
             font-size: .8em;
             font-style: italic;

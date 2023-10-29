@@ -1,5 +1,5 @@
 ---
-title: Journal
+title: Blog
 layout: index
 bodyclass: journal
 ---

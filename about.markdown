@@ -2,6 +2,7 @@
 title: About
 tags:  []
 layout: about
+bodyclass: about
 ---
 
 ## The Author

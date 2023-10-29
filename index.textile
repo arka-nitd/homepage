@@ -11,18 +11,18 @@ h1. Hello.
 
 <div class="colophon">
 
-"I (More About Me)":/about/ am a Senior Software Developer from Bangalore, working in the Data Science Team in InMobi Demand Side Platform (iDSP)
+"I (More About Me)":/about/ am a Senior Software Developer in the InMobi Demand Side Platform's (iDSP) Data Science Team.
+I address large-scale machine learning challenges in this role while developing a predictive traffic shaping layer. Additionally, I am responsible for mentoring junior engineers within the group.
 
-After twelve years of crafting corners of the Web for others and two years after blogs "died ('Wired' Confirms It)":http://www.wired.com/entertainment/theweb/magazine/16-11/st_essay/, he knew it was time to build his own.
-
-He's written "more (More About Arka)":/about/ about himself, but would rather hear from "you (Speaking of dead technology, send me an email!)":mailto:arka.nitdgp14@gmail.com
+I occasionally write about my "experiences (More About Arka)":/journal/ and love to connect with poeple.
+Always up for a "chat (drop an email!)":mailto:arka.nitdgp14@gmail.com over anything technology.
 
 </div>
 
 
 <div class="section">
 
-h4. He recently wrote
+h4. My recent posts
 
 {% for post in site.posts limit: 5 %}
 * "{{ post.title }}":{{ post.url }} <span class="line-meta">{{ post.date | date: "%A, %B %d, %Y" }}</span>
@@ -34,10 +34,10 @@ h4. He recently wrote
 
 <div class="section">
 
-h4. My Career Updates
+h4. Recent Career Updates
 
- * "SDE 4":http://github.com/mmonteleone/delorean <span class="line-meta">Promoted to SDE 4</span>
+ * "SDE 4 @ InMobi":http://github.com/mmonteleone/delorean <span class="line-meta">July 2023, Promoted to SDE 4</span>
 
-<span class="more">"More Projects &rarr;(View All Projects)":/projects/</span>
+<span class="more">"More Updates &rarr;(What's happening in my life)":/projects/</span>
 
 </div>
