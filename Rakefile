@@ -6,12 +6,12 @@ require 'rake/clean'
 desc 'Build site with Jekyll'
 task :build => [:clean, :minify] do
   # compile site
-  jekyll  
+  jekyll('build')
 end
  
 desc 'Start server with --auto'
 task :server => [:clean, :minify]  do
-  jekyll('--server --auto')
+  jekyll('serve --livereload')
 end
 
 desc 'Build and deploy'
