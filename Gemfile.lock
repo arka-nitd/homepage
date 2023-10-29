@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    RedCloth (4.3.2)
+    jekyll-textile-converter (0.1.0)
+      RedCloth (~> 4.0)
+
+PLATFORMS
+  arm64-darwin-22
+
+DEPENDENCIES
+  jekyll-textile-converter
+
+BUNDLED WITH
+   2.4.21
