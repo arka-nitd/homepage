@@ -6,7 +6,7 @@ layout: about
 
 ## The Author
 
-I'm Michael Monteleone, a passionate software developer and graphic designer from the New Orleans area.  I believe good software should be invisible at best, magic and delightful to use at worst, and that simplicity is worth the extra effort to achieve.  Simplicity is the whole point.
+I'm Arka Roy, a passionate software developer and graphic designer from the New Orleans area.  I believe good software should be invisible at best, magic and delightful to use at worst, and that simplicity is worth the extra effort to achieve.  Simplicity is the whole point.
 
 While I have written software for multiple Fortune 500 companies and have had work featured in the Wall Street Journal, I don't expect you to be impressed by that.  I certainly wouldn't be.  
 

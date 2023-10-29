@@ -1,22 +1,18 @@
-title: Michael Monteleone
-url: http://michaelmonteleone.net
-description: 'Personal site of Michael Monteleone, software developer and designer from New Orleans'
+title: Arka Roy
+url: http://arka-nitd.github.io
+description: 'Personal site of Arka Roy, Software Developer @InMobi'
 keywords:
- - Michael Monteleone
- - Mike Monteleone
- - namelessmike
+ - Arka Roy
+ - Arka
 plugins:
   - jekyll-textile-converter
 author:
-    name: Michael Monteleone
-    email: michael@michaelmonteleone.net
-    twitter: http://twitter.com/namelessmike
-    github: http://github.com/mmonteleone
-    delicious: http://delicious.com/namelessmike
-    pinboard: http://pinboard.in/u:namelessmike
-    googleplus: http://plus.google.com/100369739207842495161
-    facebook: http://www.facebook.com/michael.monteleone
-    linkedin: http://www.linkedin.com/in/michaelmonteleone/
+    name: Arka Roy
+    email: arka.nitdgp14@gmail.com
+    twitter: http://twitter.com/arka-nitd
+    github: http://github.com/arka-nitd
+    facebook: http://www.facebook.com/mailtoarko
+    linkedin: http://www.linkedin.com/in/arka-nitd
     avatar: http://www.gravatar.com/avatar/392da320b3aa4068d0b03024135875fb?s=70
     openid:
         server: https://www.google.com/accounts/o8/ud
