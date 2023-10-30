@@ -24,7 +24,7 @@ stylesheets:
  - /homepage/assets/themes/default/css/screen.css?52480=52480
  - /homepage/assets/themes/default/css/print.css
 scripts:
- - http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js    
+ - https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js
  - /homepage/assets/themes/default/js/site.js
 colors:
     highlights:
