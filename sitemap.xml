@@ -4,65 +4,44 @@
 	xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
 			    http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>http://michaelmonteleone.net/</loc>
-        <lastmod>2023-10-30T11:15:00+05:30</lastmod>
+        <loc>http://arka-nitd.github.io/</loc>
+        <lastmod>2023-10-30T11:20:51+05:30</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>	
     
     <url>
-        <loc>http://michaelmonteleone.net/projects/</loc>
-        <lastmod>2023-10-30T11:15:00+05:30</lastmod>
+        <loc>http://arka-nitd.github.io/about/</loc>
+        <lastmod>2023-10-30T11:20:51+05:30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>http://michaelmonteleone.net/about/</loc>
-        <lastmod>2023-10-30T11:15:00+05:30</lastmod>
+        <loc>http://arka-nitd.github.io/research/</loc>
+        <lastmod>2023-10-30T11:20:51+05:30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>http://michaelmonteleone.net/journal/</loc>
-        <lastmod>2023-10-30T11:15:00+05:30</lastmod>
+        <loc>http://arka-nitd.github.io/projects/</loc>
+        <lastmod>2023-10-30T11:20:51+05:30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>http://arka-nitd.github.io/blog/</loc>
+        <lastmod>2023-10-30T11:20:51+05:30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
             
     
     <url>
-        <loc>http://michaelmonteleone.net/2010/08/03/low-blow/</loc>
-        <lastmod>2010-08-03T00:00:00+05:30</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    
-    <url>
-        <loc>http://michaelmonteleone.net/2010/07/19/supergenfail/</loc>
-        <lastmod>2010-07-19T00:00:00+05:30</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    
-    <url>
-        <loc>http://michaelmonteleone.net/2010/07/09/proxying-asp.net-ajax-events-with-jquery/</loc>
-        <lastmod>2010-07-09T00:00:00+05:30</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    
-    <url>
-        <loc>http://michaelmonteleone.net/2010/06/21/suspiciously-pleasant-xml-with-csharp-4/</loc>
-        <lastmod>2010-06-21T00:00:00+05:30</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    
-    <url>
-        <loc>http://michaelmonteleone.net/2010/06/15/hello-world/</loc>
-        <lastmod>2010-06-15T00:00:00+05:30</lastmod>
+        <loc>http://arka-nitd.github.io/2023/10/29/bolt/</loc>
+        <lastmod>2023-10-29T00:00:00+05:30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>

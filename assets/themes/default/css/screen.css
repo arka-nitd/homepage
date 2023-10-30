@@ -71,7 +71,8 @@ table {
 
 /* highlight colors */
 .projects { color: #009ff7 }
-.about { color: #87d14b }
+.about { color: #FF007C }
+.research { color: #FF007C }
 .journal { color: #FF007C }
 	
 a {
@@ -110,7 +111,7 @@ body {
 #wrapper {
     border-top: 10px solid #000000;
     width: 100%;
-    min-height: 400px;
+    min-height: 990px;
     position: relative;
     z-index: 5;
     top: -5px;
@@ -124,6 +125,7 @@ body {
     }
 	#inner_wrapper {
 		width: 100%;
+		min-height: 990px;
 		height: 100%;
 		background-repeat: no-repeat;
 		background-position: center top;
@@ -134,13 +136,13 @@ body {
 		    }
     
 #container {
-    width: 720px;
+    width: 940px;
     margin-left: auto;
     margin-right: auto;
-    
-    min-height:500px;
+
+    min-height:990px;
     height:auto !important;
-    height:500px;    
+    height:990px;
     }
     
 #title {
@@ -153,7 +155,7 @@ body {
 	text-indent: -3000em;
     }
     #title h1 {
-		width: 100%;
+		width: 100%;
 		height: 100%;
 		display: block;
         }
@@ -169,27 +171,29 @@ body {
 			}
     
 nav#main_nav {
-    width: 360px;
+    width: 460px;
     top: 0px;
     position: absolute;
-    left: 50%;
+    left: 55%;
     margin-right: 0px;
     z-index: 10;
     }
     nav#main_nav ul {
         display: inline;
         float: right;
-        width: 240px;
+        width: 380px;
 		}
         nav#main_nav ul li {            
             display: inline;
             }
 
-            nav#main_nav ul li a.projects,
-
             nav#main_nav ul li a.about,
 
-            nav#main_nav ul li a.journal,
+            nav#main_nav ul li a.research,
+
+            nav#main_nav ul li a.projects,
+
+            nav#main_nav ul li a.blog,
 
             nav#main_nav ul li a {
                 border-bottom: 0px;
@@ -207,14 +211,6 @@ nav#main_nav {
 				font-weight: normal;
                 }
 
-            nav#main_nav ul li a.projects:hover,
-            .projects nav#main_nav ul li a.projects,
-            .projects nav#main_nav ul li a.projects:hover,
-            .open nav#main_nav ul li a.projects:hover {
-                background-color: #000000;
-                color: #FFFFFF;					
-                }
-
             nav#main_nav ul li a.about:hover,
             .about nav#main_nav ul li a.about,
             .about nav#main_nav ul li a.about:hover,
@@ -223,21 +219,39 @@ nav#main_nav {
                 color: #FFFFFF;					
                 }
 
-            nav#main_nav ul li a.journal:hover,
-            .journal nav#main_nav ul li a.journal,
-            .journal nav#main_nav ul li a.journal:hover,
-            .open nav#main_nav ul li a.journal:hover {
+            nav#main_nav ul li a.research:hover,
+            .research nav#main_nav ul li a.research,
+            .research nav#main_nav ul li a.research:hover,
+            .open nav#main_nav ul li a.research:hover {
+                background-color: #000000;
+                color: #FFFFFF;					
+                }
+
+            nav#main_nav ul li a.projects:hover,
+            .projects nav#main_nav ul li a.projects,
+            .projects nav#main_nav ul li a.projects:hover,
+            .open nav#main_nav ul li a.projects:hover {
+                background-color: #000000;
+                color: #FFFFFF;					
+                }
+
+            nav#main_nav ul li a.blog:hover,
+            .blog nav#main_nav ul li a.blog,
+            .blog nav#main_nav ul li a.blog:hover,
+            .open nav#main_nav ul li a.blog:hover {
                 background-color: #000000;
                 color: #FFFFFF;					
                 }
 
 
 
-            .open nav#main_nav ul li a.projects,
-
             .open nav#main_nav ul li a.about,
 
-            .open nav#main_nav ul li a.journal,
+            .open nav#main_nav ul li a.research,
+
+            .open nav#main_nav ul li a.projects,
+
+            .open nav#main_nav ul li a.blog,
 
             .open nav#main_nav ul li a.stub {
                 background-color: transparent;
@@ -247,201 +261,191 @@ nav#main_nav {
         
 #content {
     clear: both;
-    padding-left: 80px;
     padding-top: 113px;
     padding-bottom: 80px;    
     position: relative;    
     color: #000000;    
-    width: 640px;
+    width: 910px;
     overflow: hidden;
     }
-    ul code, 
-    ol code, 
-    p code {
-        font-size: 11pt;
-        }
-    #content h1 {
-        font-family: 'Helvetica Neue', Helvetica, Arial;
-        font-weight: bold;
-		font-size: 52pt;
-		letter-spacing: -1pt;		
-        padding-top: 0px;
-        color: #000000;
-		position: relative;
-		left: -3px;		
-		padding-bottom: 10px;
-        }        
-	#content h2 {
-        font-family: 'Helvetica Neue', Helvetica, Arial;
-        font-weight: bold;
-		font-size: 20pt;
-		margin-top: 10px;
-		}
-	#content h3 {
-        font-family: 'Helvetica Neue', Helvetica, Arial;
-        font-weight: bold;
-		font-size: 14pt;
-		
-		text-transform: uppercase;
-		font-size: 12pt;
-		letter-spacing: .1em;
-		}
-	#content h1 a,
-	#content h2 a,
-	#content h3 a,
-	#content h1 a:hover,
-	#content h2 a:hover,
-	#content h3 a:hover{
-    	border-bottom: 0px;
-    	}
-    #content article {
-        width: 560px;
-        overflow: display;
-        }
-    #content article p,
-    #content article blockquote,
-    #content article time,
-    #content article ul,
-    #content article ol,
-    #content article h1,
-    #content article h2,
-    #content article h3,
-    #content article pre {
-        margin-bottom: 18pt;
-        }
-        #content article header h1, 
-        #content article header h2, 
-        #content article header h3 {
-            margin-bottom: 12pt;
-            }       
-    #content article p,
-    #content article blockquote,
-    #content article time,
-    #content article ul,
-    #content article ol 
-        {
-		font-family: times, 'Times New Roman', times-roman, serif;
-        font-size: 14pt;
-		line-height: 1.5em;
-		text-align: justify;
-		}
-		#content article time {
-		    font-style: italic;
-		    text-align: center;
-		    font-size: 1em;
-		    }
-        #content article h1 {
-            width: 640px;
-            }
-        #content article blockquote {
-            padding-left: 40px;
-            padding-right: 40px;
-            }
-    #content article ul {
-        list-style-type:disc;
-        margin-left: 2em;
-        }
-    #content article ol {
-        list-style: decimal;
-        margin-left: 2em;
-        }
-        #content article ul p,
-        #content article ol p {
-            margin-top: 0px;
-            margin-bottom: 0px;
-            }
-        #content article ol ol,
-        #content article ul ul,
-        #content article ul ol,
-        #content article ol ul {
-            margin-top: 0px;
-            margin-bottom: 0px;
-            }
-    div.slidey_title_wrapper {
-        position: absolute;
-        font-weight: bold;
-        font-size: 225pt;
-        overflow: hidden;
-        width: 100%;
-        left: 0px;
-        top: 35px;           
-		color: #FFFFFF;
-		font-family: Helvetica, Arial, sans-serif;
-		letter-spacing: -1pt;
-		text-transform: none;		
-        }
-        div.slidey_title {
-            width: 760px;
-            margin-left: auto;
-            margin-right: auto;
-            overflow: visible;
-            }
-            div.slidey_title span {
-                width: 140em;
-                display: block;
-                position: relative;
-                width: 3000px;
-                overflow: hidden;
-                }        
-     #content div#disqus_thread {
-        margin-top: 80px; 
-        }
-     #content article p a,
-     #content article ul a,
-     #content article ol a {
-        font-weight: normal;
-        }        
-    .projects header a,
-    .about header a,
-    .journal header a {
-        color: #000000;
-        -webkit-transition: color 0.17s ease-in-out;
-        -moz-transition: color 0.17s ease-in-out;
-        }
-    .projects a {
-        color: #009ff7;
-        border-color: #009ff7;
-        }
-        .projects header a { color: #000000; }
-        .projects header a:hover { color: #009ff7; }
-    .about a {
+
+ul code,
+ol code,
+p code {
+    font-size: 11pt;
+}
+
+#content h1 {
+    font-family: 'Helvetica Neue', Helvetica, Arial;
+    font-weight: bold;
+    font-size: 52pt;
+    letter-spacing: -1pt;
+    padding-top: 0px;
+    color: #000000;
+    position: relative;
+    left: 0px;
+    padding-bottom: 10px;
+}
+#content h2 {
+    font-family: 'Helvetica Neue', Helvetica, Arial;
+    font-weight: bold;
+    font-size: 20pt;
+    margin-top: 10px;
+}
+#content h3 {
+    font-family: 'Helvetica Neue', Helvetica, Arial;
+    font-weight: bold;
+    font-size: 14pt;
+
+    text-transform: uppercase;
+    font-size: 12pt;
+    letter-spacing: .1em;
+}
+
+#content h1 a,
+#content h2 a,
+#content h3 a,
+#content h1 a:hover,
+#content h2 a:hover,
+#content h3 a:hover{
+    border-bottom: 0px;
+}
+#content article {
+    width: 940px;
+    overflow: display;
+}
+#content article p,
+#content article blockquote,
+#content article time,
+#content article ul,
+#content article ol,
+#content article h1,
+#content article h2,
+#content article h3,
+#content article pre {
+    margin-bottom: 18pt;
+}
+#content article header h1,
+#content article header h2,
+#content article header h3 {
+    margin-bottom: 12pt;
+}
+#content article p,
+#content article blockquote,
+#content article time,
+#content article ul,
+#content article ol {
+    font-family: times, 'Times New Roman', times-roman, serif;
+    font-size: 14pt;
+    line-height: 1.5em;
+    text-align: justify;
+}
+#content article time {
+    font-style: italic;
+    text-align: center;
+    font-size: 1em;
+}
+#content article h1 {
+    width: 640px;
+}
+#content article blockquote {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#content article ul {
+    list-style-type:disc;
+    margin-left: 2em;
+}
+#content article ol {
+    list-style: decimal;
+    margin-left: 2em;
+}
+#content article ul p,
+#content article ol p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#content article ol ol,
+#content article ul ul,
+#content article ul ol,
+#content article ol ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+div.slidey_title_wrapper {
+    position: absolute;
+    font-weight: bold;
+    font-size: 225pt;
+    overflow: hidden;
+    width: 100%;
+    left: 0px;
+    top: 35px;
+    color: #FFFFFF;
+    font-family: Helvetica, Arial, sans-serif;
+    letter-spacing: -1pt;
+    text-transform: none;
+}
+
+div.slidey_title {
+    width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: visible;
+}
+div.slidey_title span {
+    width: 140em;
+    display: block;
+    position: relative;
+    width: 3000px;
+    overflow: hidden;
+}
+#content div#disqus_thread {
+    margin-top: 80px;
+}
+#content article p a,
+#content article ul a,
+#content article ol a {
+    font-weight: normal;
+}
+
+.projects header a,
+.research header a,
+.about header a,
+.journal header a {
+    color: #000000;
+    -webkit-transition: color 0.17s ease-in-out;
+    -moz-transition: color 0.17s ease-in-out;
+}
+
+
+.projects a {
+    color: #009ff7;
+    border-color: #009ff7;
+}
+.projects header a { color: #000000; }
+.projects header a:hover { color: #009ff7; }
+
+.research a {
+     color: #FF007C;
+     border-color: #FF007C;
+}
+.research header a { color: #000000; }
+.research header a:hover { color: #FF007C; }
+
+.about a {
         color: ;
         border-color: ;
         }
-        .about header a { color: #000000; }
-        .about header a:hover { color: #87d14b; }
-    .journal a {
-        color: #FF007C;
-        border-color: #FF007C;
-        }
-        .journal header a { color: #000000; }
-        .journal header a:hover { color: #FF007C; }    
-     a:visited {
-        color: #000000;
-        border-color: #000000;
-        }
-#backpages {
-    position: absolute;
-    width: 920px;
-    left: 50%;
-    margin-left: -460px;
-    z-index: 1;
-    }
-    #backpages div {
-        position: absolute;
-        width: 920px;
-        height: 100px;
-        background-repeat: no-repeat;
-        }
-        #backpages div.journal {
-            background-image: url(../images/previewc.png);
-            }
-        #backpages div.about {
-            background-image: url(../images/previewb.png);
-            }
-        #backpages div.projects {
-            background-image: url(../images/previewa.png);
-            }
+.about header a { color: #000000; }
+.about header a:hover { color: #87d14b; }
+
+.journal a {
+    color: #FF007C;
+    border-color: #FF007C;
+}
+.journal header a { color: #000000; }
+.journal header a:hover { color: #FF007C; }
 
 #footer-wrapper {
     clear: both;
@@ -450,17 +454,17 @@ nav#main_nav {
 	color: #FFFFFF;
 	color: #888;
 	font-size: 8pt;
-    min-height:250px;
+    min-height:50px;
     height:auto !important;
-    height:250px;
-	padding-bottom: 80px;
+    height:50px;
+	padding-bottom: 20px;
     }
     footer {
-        padding-top: 80px;
-        width: 720px;
+        padding-top: 20px;
+        width: 940px;
         margin-left: auto;
         margin-right: auto;
-    	line-height: 1.6em;
+    	line-height: 1.5em;
         }
         footer li {
             clear: both;
@@ -468,10 +472,9 @@ nav#main_nav {
             margin-bottom: 10px;
             }
         #footer-wrapper footer a {
-            color: #CCC;
+            color: #e7f0f3;
             text-decoration: none;
-            border-bottom: 1px dotted #666;     
-            font-weight: normal;                   
+            font-weight: normal;
             }
             #footer-wrapper footer a:hover {
                 color: #FFFFFF;
@@ -525,7 +528,7 @@ nav#main_nav {
             footer section.colophon {
                 padding-left: 80px;
                 width: 140px;
-                background-image: url(http://www.gravatar.com/avatar/392da320b3aa4068d0b03024135875fb?s=70);
+                background-image: url();
                 background-repeat: no-repeat;
                 background-position: 0px 45px;
                 }
@@ -558,7 +561,8 @@ body.home #content div.banner {
     	}
 body.home #content div.colophon {
     margin-top: 30px;
-    background-image: url(../images/portrait.jpg);
+    background-image: url(../images/profilepic.jpg);
+    background-size: 163px 180px;
     background-position: top right;
     background-repeat: no-repeat;
     padding-right: 175px;
@@ -613,26 +617,26 @@ body.home #content div.section {
 
 /* projects listing */
 
-.projects article {    
+:is(.projects, .research) article {
     }
-    .projects #content article h3 {
+    :is(.projects, .research) #content article h3 {
         float: left;
         width: 160px;
         margin-top: 1px;
         }
-    .projects #content article ul {
+    :is(.projects, .research) #content article ul {
         text-align: left;
         list-style: none;
         margin-left: 0px;/*1em;*/
         margin-left: 160px;
         padding-bottom: 20px;
         }
-        .projects #content article ul li {
+        :is(.projects, .research) #content article ul li {
             display: block;
             overflow: auto;
             padding-bottom: .75em;
             }
-        .projects #content article ul li a {
+        :is(.projects, .research) #content article ul li a {
             display: block;
             font-family: 'Helvetica Neue', Helvetica, Arial,sans-serif;
             line-height: 1.3em;
@@ -640,10 +644,10 @@ body.home #content div.section {
             color: #000000;
             border-bottom: 1px dotted #000000;
             }
-            .projects #content article ul li a:hover {
+            :is(.projects, .research) #content article ul li a:hover {
                 border-bottom: 1px solid #000000;
                 }
-        .projects #content article ul li span {
+        :is(.projects, .research) #content article ul li span {
             display: block;
             font-size: .8em;
             font-style: italic;
@@ -684,6 +688,34 @@ body.home #content div.section {
                 color: #000000;
                 border-bottom: 1px solid #000000;
                 }            
+
+.social {
+
+   text-align: center;
+
+  .contact-icons {
+    font-size: 3rem;
+    text-align: center;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contact-icons a {
+    text-decoration: none;
+    border: none;
+    outline: none;
+  }
+}
+
+.contact-note {
+    margin-top: 15px;
+    text-align: center;
+
+    a {
+        text-decoration: none
+    }
+}
 
 /* pygments code highlighting */
 
