@@ -119,13 +119,13 @@ body {
 	background-image: url(../images/gradshine.png);
     background-repeat: repeat-x;
     font-size: 12pt;
-    font-family: 'Helvetica Neue', Helvetica, Arial;    
+    font-family: 'Helvetica Neue', Helvetica, Arial;
     }
     
 #wrapper {
     border-top: 10px solid {{ site.colors.mono.dark }};
     width: 100%;
-    min-height: 990px;
+    min-height: 100%;
     position: relative;
     z-index: 5;
     top: -5px;
@@ -139,7 +139,6 @@ body {
     }
 	#inner_wrapper {
 		width: 100%;
-		min-height: 990px;
 		height: 100%;
 		background-repeat: no-repeat;
 		background-position: center top;
@@ -150,13 +149,12 @@ body {
 		    }
     
 #container {
-    width: 940px;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 
-    min-height:990px;
-    height:auto !important;
-    height:990px;
+    min-height:90vh !important;
+    height:auto;
     }
     
 #title {
@@ -185,17 +183,17 @@ body {
 			}
     
 nav#main_nav {
-    width: 460px;
+    width: 40%;
     top: 0px;
     position: absolute;
-    left: 55%;
+    left: 60%;
     margin-right: 0px;
     z-index: 10;
     }
     nav#main_nav ul {
         display: inline;
         float: right;
-        width: 380px;
+        width: 100%;
 		}
         nav#main_nav ul li {            
             display: inline;
@@ -239,12 +237,13 @@ nav#main_nav {
         
 #content {
     clear: both;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 113px;
-    padding-bottom: 80px;    
-    position: relative;    
+    padding-bottom: 80px;
+    position: relative;
     color: {{ site.colors.mono.dark }};    
-    width: 910px;
-    overflow: hidden;
+    width: 90%;
     }
 
 ul code,
@@ -289,8 +288,8 @@ p code {
     border-bottom: 0px;
 }
 #content article {
-    width: 940px;
-    overflow: display;
+    width: 100%;
+    overflow-y: auto;
 }
 #content article p,
 #content article blockquote,
@@ -399,14 +398,14 @@ div.slidey_title span {
 
 .projects a {
     color: {{ site.colors.highlights.blue }};
-    border-color: {{ site.colors.highlights.blue }};
+    border-color: {{ site.colors.highlights.dark }};
 }
 .projects header a { color: {{ site.colors.mono.dark }}; }
 .projects header a:hover { color: {{ site.colors.highlights.blue }}; }
 
 .research a {
      color: {{ site.colors.highlights.red }};
-     border-color: {{ site.colors.highlights.red }};
+     border-color: {{ site.colors.highlights.dark }};
 }
 .research header a { color: {{ site.colors.mono.dark }}; }
 .research header a:hover { color: {{ site.colors.highlights.red }}; }
@@ -420,7 +419,7 @@ div.slidey_title span {
 
 .journal a {
     color: {{ site.colors.highlights.red }};
-    border-color: {{ site.colors.highlights.red }};
+    border-color: {{ site.colors.highlights.dark }};
 }
 .journal header a { color: {{ site.colors.mono.dark }}; }
 .journal header a:hover { color: {{ site.colors.highlights.red }}; }
@@ -432,16 +431,13 @@ div.slidey_title span {
 	color: {{ site.colors.mono.light }};
 	color: #888;
 	font-size: 8pt;
-    min-height:50px;
-    height:auto !important;
-    height:50px;
+    min-height:10vh !important;
 	padding-bottom: 20px;
     }
     footer {
         padding-top: 20px;
-        width: 940px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: auto;
+        width: 80%;
     	line-height: 1.5em;
         }
         footer li {
