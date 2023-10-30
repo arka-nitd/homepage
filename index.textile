@@ -11,10 +11,13 @@ h1. Hello.
 
 <div class="colophon">
 
-"I (More About Me)":/about/ am a Senior Software Developer in the InMobi Demand Side Platform's (iDSP) Data Science Team.
-I address large-scale machine learning challenges in this role while developing a predictive traffic shaping layer. Additionally, I am responsible for mentoring junior engineers within the group.
+"I (More About Me)":/about/ am a Senior Software Developer in the Data Science Team @ InMobi's Demand Side Platform.
+I work on the Bidder Team, and my work involves Large Scale Machine Learning, Software Development, and a lot of domain stuffs.
+Currently I am creating a Predictive Traffic Shaping layer, which involves extracting the top ad requests from a pool of billions.
+In the past, I worked on several intricate problem statements in ad-tech like CVR Modeling, A/B Framework, and User App Affinity Modeling.
 
-I occasionally write about my "experiences (More About Arka)":/journal/ and love to connect with poeple.
+
+I occasionally write about my "experiences (More About Arka)":/homepage/blog/ and love to connect with poeple.
 Always up for a "chat (drop an email!)":mailto:arka.nitdgp14@gmail.com over anything technology.
 
 </div>

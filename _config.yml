@@ -10,7 +10,8 @@ plugins:
 author:
     name: Arka Roy
     email: arka.nitdgp14@gmail.com
-    twitter: http://twitter.com/arka-nitd
+    googlescholar: https://scholar.google.com/citations?user=MF3j7q4AAAAJ&hl=en
+    twitter: https://twitter.com/arka_nitd
     github: http://github.com/arka-nitd
     facebook: http://www.facebook.com/mailtoarko
     linkedin: http://www.linkedin.com/in/arka-nitd
@@ -26,6 +27,7 @@ stylesheets:
 scripts:
  - https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js
  - /homepage/assets/themes/default/js/site.js
+cv: /homepage/assets/cv/CV_Arka_Roy.pdf
 colors:
     highlights:
         blue: '#009ff7'

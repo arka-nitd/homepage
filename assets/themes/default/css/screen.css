@@ -536,13 +536,13 @@ body.home #content div.banner {
 body.home #content div.colophon {
     margin-top: 30px;
     background-image: url(../images/profilepic.jpg);
-    background-size: 163px 180px;
+    background-size: 270px 300px;
     background-position: top right;
     background-repeat: no-repeat;
-    padding-right: 175px;
-    min-height:160px;
+    padding-right: 280px;
+    padding-top: 10px;
+    min-height:250px;
     height:auto !important;
-    height:160px;
     }
     body.home #content div.colophon p {
         position: relative;
