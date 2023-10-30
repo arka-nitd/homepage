@@ -30,12 +30,7 @@ jQuery(function($){
         // pass all items that contain transparent pngs to an ie6-fixer-upper
         $('header#title h1 a, div#backpages div, body').iepng();
     } else {
-        // hack - in any version of ie, don't animate the slidey title, just show it since it does such an 
-        // ugly, jagged, flickery, distraction with it.  Need to change this to test for 
-        // feature instead of browser identity  
-        $('body[class!=home] #content').slideyTitle({
-            animate: !browser.isIe
-        });
+
     }
     
     $('body.home #content h1').rainbow().sunrise({
@@ -385,13 +380,6 @@ jQuery(function($){
         
         return this;
     };
-    $.extend($.fn.colorTranspose, {
-        defaults: {
-            duration: 225,
-            fromAttribute: 'color',
-            toElementBgSelector: 'body'
-        }
-    });
 })(jQuery);
 
 
