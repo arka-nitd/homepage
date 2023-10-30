@@ -17,11 +17,11 @@ jQuery(function($){
     // if the screen isn't a touchpanel (iphone, ipad, etc)
     // then add in some fancy rollover effects for links
     if(!browser.isTouchPanel) {
-//        $('nav#main_nav').peek({
-//            unpeekedWrapperOffset: browser.acceleratesCssAnimations ? 0 : -5,
-//            speed: 250
-//        });
-        $('nav#main_nav a').colorTranspose();
+        $('nav#main_nav').peek({
+            unpeekedWrapperOffset: browser.acceleratesCssAnimations ? 0 : -5,
+            speed: 250
+        });
+        $('nav#main_nav a').colorTranspose();       
     }
 
     if(browser.isIe6) { 
@@ -482,7 +482,70 @@ jQuery(function($){
                                 options || {}));                                                
                     }
                 };
+            selection.bind({
+                peek: function(e, data) {
+                    // hide any currently peeked item first, and stop any animation it might currently have
+                    if(typeof currentPeek !== 'undefined') {
+                        currentPeek.stop().css({top: settings.hiddenOffset + 'px' });                        
+                    }
+                    var preview = $(e.target).data(previewKey);
+                    preview.css({top: '0px'});
+                    slide(wrapper, settings.wrapperOffset);
+                    slide(preview, settings.previewOffset);
+                    currentPeek = preview;
+                    body.addClass('open');
+                },
+                peekchange: function(e, data) {
+                    slide(currentPeek, settings.hiddenOffset, {duration: settings.speed * 1.3, easing: 'swing'});
+                    currentPeek = $(e.target).data(previewKey);                    
+                    var preview = currentPeek;
+                    preview.css({ top: settings.hiddenOffset + 'px' });
+                    slide(preview, settings.previewOffset, {duration: settings.speed * 1.5});
+                },
+                unpeek: function(e, data) {
+                    slide(wrapper, settings.unpeekedWrapperOffset, {immediate:data.navigated});
+                    slide(currentPeek, settings.unpeekedOffset, {immediate:data.navigated});
+                    // if being unpeeked from clicking a link,
+                    // don't immediately remove the open class
+                    // as this will cause a flash of improperly highlighted link (FOIHL)
+                    if(!data.navigated) {
+                        body.removeClass('open');                        
+                    }
+                }
+            });
         };    
+    $.fn.peek = function(options) {        
+        var settings = $.extend({}, $.fn.peek.defaults, options || {});
+        createUi(this, settings);
+        var links = this.find('a');        
+        bindEvents(links, settings);
+        initiateEventModel(links, settings);
+        
+        // make sure that the peeking state 
+        // is fully reset to not-peeking after the page is
+        // being navigated away from, mainly for when 
+        // back-buttoned back in by modern browsers
+        // which cache historical page state
+        $(window).bind("unload", function(){
+            $('body').removeClass('open');
+        });
+        
+        return this;
+    };
+    $.extend($.fn.peek, {
+        defaults: {
+            previewWrapperHtml: '<div id="backpages"></div>',
+            previewItemHtml: '<div class="?"></div>',
+            wrapper: '#wrapper',
+            wrapperOffset: 100,
+            previewOffset: 30,
+            hiddenOffset: 130,
+            ease: 'easeOutBack',
+            speed: 300,
+            unpeekedWrapperOffset: -5,
+            unpeekedOffset: 0
+        }        
+    });    
 })(jQuery);
 
 // little animation that makes an item appear to rise up out of nowhere 
