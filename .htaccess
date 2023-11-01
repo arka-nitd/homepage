@@ -5,14 +5,12 @@ Options -Indexes
 ErrorDocument 404 /notfound/
 ErrorDocument 403 /notfound/
 
-# Caching 
-# Header unset ETag
-# FileETag None
-# <FilesMatch "(?i)^.*\.(ico|html|jpg|jpeg|png|gif|js|css|ttf|eot|svg)$">
-# Header unset Last-Modified
-# Header set Expires "Fri, 21 Dec 2015 00:00:00 GMT"
-# Header set Cache-Control "public, no-transform"
-# </FilesMatch>
+# Redirection of www.* to non-www.*
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.arka-nitd.github.io
+RewriteRule (.*) http://arka-nitd.github.io/ [R=301,L]
+
+Header unset X-Powered-By
 
 # GZip
 <IfModule mod_deflate.c>
