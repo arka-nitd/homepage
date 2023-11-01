@@ -85,7 +85,7 @@ table {
 
 /* highlight colors */
 .projects { color: {{ site.colors.highlights.blue }} }
-.about { color: {{ site.colors.highlights.red }} }
+.work { color: {{ site.colors.highlights.red }} }
 .research { color: {{ site.colors.highlights.red }} }
 .journal { color: {{ site.colors.highlights.red }} }
 	
@@ -388,7 +388,7 @@ div.slidey_title span {
 
 .projects header a,
 .research header a,
-.about header a,
+.work header a,
 .journal header a {
     color: {{ site.colors.mono.dark }};
     -webkit-transition: color 0.17s ease-in-out;
@@ -410,12 +410,12 @@ div.slidey_title span {
 .research header a { color: {{ site.colors.mono.dark }}; }
 .research header a:hover { color: {{ site.colors.highlights.red }}; }
 
-.about a {
+.work a {
         color: {{ site.colors.highlights.dark }};
         border-color: {{ site.colors.highlights.dark }};
         }
-.about header a { color: {{ site.colors.mono.dark }}; }
-.about header a:hover { color: {{ site.colors.highlights.green }}; }
+.work header a { color: {{ site.colors.mono.dark }}; }
+.work header a:hover { color: {{ site.colors.highlights.green }}; }
 
 .journal a {
     color: {{ site.colors.highlights.red }};

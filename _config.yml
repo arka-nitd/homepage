@@ -17,11 +17,12 @@ author:
     linkedin: http://www.linkedin.com/in/arka-nitd
 
 sections:
- - about
+ - work
  - research
  - projects
  - blog
 stylesheets:
+ - /homepage/assets/themes/default/css/timeline.css
  - /homepage/assets/themes/default/css/screen.css?52480=52480
  - /homepage/assets/themes/default/css/print.css
 scripts:
@@ -38,7 +39,10 @@ colors:
         medium: '#777777'
         light: '#FFFFFF'
     bg: '#EAF1F4'
-    
+collections:
+  steps:
+    title: Steps
+    output: false
 pygments: true
 permalink: pretty 
 exclude:
