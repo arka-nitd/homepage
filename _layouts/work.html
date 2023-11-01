@@ -4,11 +4,11 @@ bodyclass: about
 ---
 <div class="article timeline">
     <h1 class="cv-title timeline"><span class="black white-text">{{ page.title }}</span></h1>
-    {% assign steps = site.steps | sort: 'date' %}
+    {% assign steps = site.steps | sort: 'date' | reverse %}
     {% for step in steps %}
     <div class="item">
         <i class="vertical-line"></i>
-        <h2 class="item-date">{{ step.date | date: '%m/%Y' }}{% if step.enddate %} - {{ step.enddate | date: '%m/%Y' }}{% endif %}</h2>
+        <h2 class="item-date">{{ step.date | date: '%B %Y' }}{% if step.enddate %} - {{ step.enddate | date: '%B %Y' }}{% endif %}</h2>
         <div class="card-panel">
             <h3 class="card-title">
                 {{ step.title }}

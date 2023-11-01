@@ -12,8 +12,9 @@ h1. Hello.
 <div class="colophon">
 
 "I (More About Me)":/about/ am a Senior Software Developer in the Data Science Team @ InMobi's Demand Side Platform.
-I work on the Bidder Team, and my work involves Large Scale Machine Learning, Software Development, and a lot of domain stuffs.
-Currently I am creating a Predictive Traffic Shaping layer, which involves extracting the top ad requests from a pool of billions.
+I work on the Bidder component, and my work involves Large Scale Machine Learning, Software Development, and a lot of domain stuffs.
+Currently I am creating a Predictive Traffic Shaping layer, also called SPO (Supply Path Optimzation), which involves extracting
+the top ad requests from a pool of billions.
 In the past, I worked on several intricate problem statements in ad-tech like CVR Modeling, A/B Framework, and User App Affinity Modeling.
 
 
@@ -31,7 +32,7 @@ h4. My recent posts
 * "{{ post.title }}":{{ post.url }} <span class="line-meta">{{ post.date | date: "%A, %B %d, %Y" }}</span>
 {% endfor %} 
 
-<span class="more">"Full Archive &rarr;(View the Full Archives)":/journal/</span>
+<span class="more">"Full Archive &rarr;(View the Full Archives)":/homepage/blog</span>
 
 </div>
 
@@ -41,6 +42,6 @@ h4. Recent Career Updates
 
  * "SDE 4 @ InMobi":http://github.com/mmonteleone/delorean <span class="line-meta">July 2023, Promoted to SDE 4</span>
 
-<span class="more">"More Updates &rarr;(What's happening in my life)":/projects/</span>
+<span class="more">"More &rarr;(What's happening in my life)":/homepage/work/</span>
 
 </div>

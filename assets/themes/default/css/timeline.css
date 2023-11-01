@@ -48,12 +48,13 @@ bottom:0;
 }
 
 .item .card-panel {
-    font-family: Oswald, sans-serif !important;
+    line-height: 1.5rem !important;
     margin:2rem 0 0 3rem !important;
 }
 
 .card-panel {
     width: 60%;
+    padding-left: 32px !important;
     transition: box-shadow .25s;
     padding: 16px;
     border-radius: 2px;
@@ -104,4 +105,48 @@ margin-left:4rem !important;
   height: 100%; /* Adjust the height as needed for your border thickness */
   background-image: linear-gradient(to bottom, transparent 0%, #000 100%);
   z-index: -1;
+}
+
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  padding-right: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 40px; /* Increase the font size for visibility */
+  cursor: pointer;
+  transition: color 0.3s; /* Add a transition for hover effect */
+
+  /* Hover effect to change the color on hover */
+  &:hover {
+    color: grey; /* Change the color on hover */
+  }
+}
+
+
+iframe {
+  width: 100%;
+  height: 300px;
 }

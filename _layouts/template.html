@@ -44,7 +44,7 @@
     {% endfor %}
     {% for script in page.scripts %}
     <script src="{{ script }}" type="text/javascript"></script>
-    {% endfor %}    
+    {% endfor %}
 </head>
 <body class="{{ page.bodyclass  }}">
 <div id="wrapper" >
@@ -56,11 +56,23 @@
         <nav id="main_nav">
             <ul>
                 {% for section in site.sections %}
-                <li><a href="/homepage/{{ section }}/" class="{{ section }}">{{ section }}</a></li>
+                <li>
+                    {% if section == "resume" %}
+                    <a href="#" class="{{ section }}">{{ section }}</a>
+                    {% else %}
+                    <a href="/homepage/{{ section }}/" class="{{ section }}">{{ section }}</a>
+                    {% endif %}
+                </li>
                 {% endfor %}
             </ul>
         </nav>        
         <div id="content">
+        <div id="popupOverlay" class="popup-overlay">
+            <div id="popupContent" class="popup-content">
+                <span id="closePopupButton" class="close-button">&times;</span>
+                <iframe style="width: 700px; height: 700px" id="popupIframe" src="{{ site.cv }}"></iframe>
+            </div>
+        </div>
         {{ content }}
         </div>
     </div>    
@@ -71,7 +83,7 @@
                     <a href="mailto:{{ site.author.email }}" title="Email"><i class="fa fa-envelope"></i></a>
                     <a href="{{ site.author.googlescholar }}" title="Google Scholar" target="_blank"><i class="ai ai-google-scholar-square ai-1x"></i></a>
                     <a href="{{ site.author.linkedin }}" title="LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a>
-                    <a href="{{ site.author.facebook }}" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="{{ site.author.github }}" title="Github" target="_blank"><i class="fa fa-github"></i></a>
                     <a href="{{ site.author.twitter }}" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
                 </div>
             </div>

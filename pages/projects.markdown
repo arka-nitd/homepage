@@ -2,6 +2,7 @@
 title: Projects
 layout: project
 bodyclass: projects
+permalink: /projects.html
 ---
 
 *Open Source Projects*

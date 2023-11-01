@@ -21,6 +21,7 @@ sections:
  - research
  - projects
  - blog
+ - resume
 stylesheets:
  - /homepage/assets/themes/default/css/timeline.css
  - /homepage/assets/themes/default/css/screen.css?52480=52480

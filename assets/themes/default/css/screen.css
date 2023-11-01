@@ -34,7 +34,6 @@ body {
 	line-height: 1;
     }
 ol, ul {
-	list-style: none;
     }
 blockquote, q {
 	quotes: none;
@@ -87,7 +86,7 @@ table {
 .projects { color: {{ site.colors.highlights.blue }} }
 .work { color: {{ site.colors.highlights.red }} }
 .research { color: {{ site.colors.highlights.red }} }
-.journal { color: {{ site.colors.highlights.red }} }
+.blog { color: {{ site.colors.highlights.red }} }
 	
 a {
     color: {{ site.colors.mono.dark }};
@@ -323,7 +322,7 @@ p code {
     font-size: 1em;
 }
 #content article h1 {
-    width: 640px;
+    width: 80%px;
 }
 #content article blockquote {
     padding-left: 40px;
@@ -389,7 +388,7 @@ div.slidey_title span {
 .projects header a,
 .research header a,
 .work header a,
-.journal header a {
+.blog header a {
     color: {{ site.colors.mono.dark }};
     -webkit-transition: color 0.17s ease-in-out;
     -moz-transition: color 0.17s ease-in-out;
@@ -417,12 +416,12 @@ div.slidey_title span {
 .work header a { color: {{ site.colors.mono.dark }}; }
 .work header a:hover { color: {{ site.colors.highlights.green }}; }
 
-.journal a {
+.blog a {
     color: {{ site.colors.highlights.red }};
     border-color: {{ site.colors.highlights.dark }};
 }
-.journal header a { color: {{ site.colors.mono.dark }}; }
-.journal header a:hover { color: {{ site.colors.highlights.red }}; }
+.blog header a { color: {{ site.colors.mono.dark }}; }
+.blog header a:hover { color: {{ site.colors.highlights.red }}; }
 
 #footer-wrapper {
     clear: both;
@@ -629,21 +628,21 @@ body.home #content div.section {
             margin-top: 5px;
             }
 
-/* journal/blog listing */
+/* blog/blog listing */
 
-.journal article ul.archive {
+.blog article ul.archive {
     }
-    .journal #content article ul.archive {
+    .blog #content article ul.archive {
         list-style: none;
         margin: 0px;        
         }
-        .journal #content article ul.archive li {        
+        .blog #content article ul.archive li {
             display: block;
             clear: both;
             overflow: auto;
             height: 35px;
             }
-        .journal #content article ul.archive li time {
+        .blog #content article ul.archive li time {
             width: 160px;
             float: left;
             text-align: left;
@@ -653,12 +652,12 @@ body.home #content div.section {
             line-height: 35px;
             font-size: 10pt;
             }
-        .journal #content article ul.archive li a{    
+        .blog #content article ul.archive li a{
             color: {{ site.colors.mono.dark }};
             border-bottom: 1px dotted {{ site.colors.mono.dark }};
             line-height: 35px;
             }
-            .journal #content article ul.archive li a:hover {    
+            .blog #content article ul.archive li a:hover {
                 color: {{ site.colors.mono.dark }};
                 border-bottom: 1px solid {{ site.colors.mono.dark }};
                 }            

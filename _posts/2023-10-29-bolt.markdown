@@ -1,8 +1,0 @@
----
-title: Designing Bolt
-tags:  [ml]
-layout: post
-description: Building an In-Memory Model Predictor
-comments: false
----
-

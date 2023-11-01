@@ -2,6 +2,7 @@
 title: Research
 layout: research
 bodyclass: research
+permalink: /research.html
 ---
 
 *@InMobi*
